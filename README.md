@@ -98,3 +98,35 @@ Planned work includes:
 ## Disclaimer
 
 All security testing in this project is performed only inside a controlled personal lab environment for educational purposes.
+
+## Screenshots and Results
+
+### Wazuh Dashboard Overview
+
+The Wazuh dashboard confirms that the Windows endpoint is actively connected to the Ubuntu Wazuh manager and security events are being collected.
+
+![Wazuh Dashboard Overview](screenshots/wazuh-dashboard-overview.png)
+
+### Windows Endpoint Monitoring
+
+The Windows endpoint is monitored through the Wazuh agent, providing visibility into endpoint security events, vulnerability information, MITRE ATT&CK mappings, and File Integrity Monitoring activity.
+
+![Windows Endpoint Dashboard](screenshots/windows-agent-dashboard.png)
+
+### File Integrity Monitoring
+
+Real-time File Integrity Monitoring was configured for the following Windows directory:
+
+```text
+D:\VirtualBox VMs\test Waz
+```
+
+Wazuh successfully detected file creation, modification, and deletion events.
+
+![File Integrity Monitoring Events](screenshots/fim-events.png)
+
+### FIM Alert Investigation
+
+Individual Wazuh events were investigated to review details such as the monitored file path, event type, integrity checksum changes, rule level, rule ID, and agent information.
+
+![Detailed FIM Alert](screenshots/fim-event-details.png)
