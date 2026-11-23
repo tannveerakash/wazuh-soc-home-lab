@@ -1,4 +1,4 @@
- Wazuh SOC Home Lab
+Wazuh SOC Home Lab
 
  Overview
 
